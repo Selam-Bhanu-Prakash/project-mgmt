@@ -242,6 +242,153 @@
     padding-right: -10%;
     padding-left: -5%; 
 }
+
+.count-div {
+    margin-top: 100px;
+    height: 300px;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: rgb(47, 183, 218);
+    margin-bottom: 50px;
+}
+.dummy {
+    height: 300px;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+} 
+.count-img {
+    height: 40px;
+    width: 40px;
+}
+.count-h1 {
+    font-size: 4rem;
+    color: white;
+}
+.count-p {
+    color: white;
+}
+.inner-count {
+    align-items: center;
+    text-align: center;
+}
+.way-div {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.way-inner-div {
+    text-align: center;
+}
+.way-inner-div1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height:200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.w-img {
+    width: 30px;
+    height: 30px;
+    margin-top: 14px;
+    margin-left: 15px;
+}
+.w-img-bg {
+    border-radius:50%;
+    height: 60px;
+    width: 60px
+}
+.finder {
+    height: 100%;
+    width: 20%;
+    padding-top: 6%;
+    padding-left: 7%;
+}
+h6 {
+    margin-top: 30px;
+    margin-left: -10px;
+}
+.ext-contact {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 100px;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    
+}
+.contact-div {
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 500px;
+}
+.left-side {
+    background-color: rgb(47, 183, 218);
+    height: 100%;
+    width: 100%;
+    border: 1px soild black;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    z-index: 100;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+}
+.right-side {
+    height: 100%;
+    width: 200%;
+    border: 2px solid black;
+    padding: 50px;
+    font-size: 12px;
+}
+.contact {
+    margin-top: 50px;
+    height: 100px;
+}
+.google-map {
+    margin-top: -20px;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    /* z-index: 200; */
+    border-top-left-radius: 10px;
+
+}
+.map-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.f-div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 320px) {
     .main-div {
         display: block;

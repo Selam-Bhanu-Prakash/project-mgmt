@@ -7,6 +7,9 @@ import Sponsors from "./Sponsors";
 import Backlog from "./Backlog";
 import Development from "./Development";
 import Digital from "./Digital";
+import Count from "./Count";
+import WayFinder from "./WayFinder";
+import ContactUs from "./ContactUs";
 const Home = () => {
   return (
     <div>
@@ -61,6 +64,12 @@ const Home = () => {
           </div>
           <Digital />
         </div>
+      </div>
+
+      <Count />
+      <WayFinder />
+      <div className="ext-contact">
+        <ContactUs />
       </div>
     </div>
   );
