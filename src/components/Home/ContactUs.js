@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Home.css";
 import Call from "../../images/call.png";
 import Mail from "../../images/mail.png";
-import { useLoadScript, GoogleMap } from "@react-google-maps/api";
+import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 import { useMemo } from "react";
 
 const ContactUs = () => {
@@ -80,7 +80,9 @@ const ContactUs = () => {
               mapContainerClassName="map-container"
               center={center}
               zoom={10}
-            />
+            >
+            <Marker position={{ lat: 14.146319, lng: 79.850388 }} />
+            </GoogleMap>
           )}
         </div>
       </div>
@@ -88,56 +90,68 @@ const ContactUs = () => {
         <div>
           <form onSubmit={handleSubmit}>
             <div className="f-div1">
-              <label htmlFor="name">Your name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-              <label htmlFor="email">Email address:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
+              <div className="form-field">
+                <label htmlFor="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="form-field">
+                <label htmlFor="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+              </div>
             </div>
+
+            <div className="f-div1">
+              <div className="form-field">
+                <label htmlFor="contactNumber">Contact Number (optional)</label>
+                <input
+                  type="tel"
+                  id="contactNumber"
+                  name="contactNumber"
+                  value={formData.contactNumber}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="form-field">
+                <label htmlFor="organizationName">
+                  Your organization name (optional)
+                </label>
+                <input
+                  type="text"
+                  id="organizationName"
+                  name="organizationName"
+                  value={formData.organizationName}
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
+
             <div>
-              
+              <div className="form-field">
+                <label htmlFor="message">Message</label>
+                <h2 style={{opacity:"50%", fontSize:"14px"}}>What do you want to talk to us about?</h2>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                />
+              </div>
             </div>
-            <div>
-              <label htmlFor="contactNumber">Contact number:</label>
-              <input
-                type="tel"
-                id="contactNumber"
-                name="contactNumber"
-                value={formData.contactNumber}
-                onChange={handleChange}
-              />
+            <div style={{ marginTop: "30px", textAlign: "end" }}>
+              <button type="submit" className="form-submit">SEND MESSAGE</button>
             </div>
-            <div>
-              <label htmlFor="organizationName">Your organization name:</label>
-              <input
-                type="text"
-                id="organizationName"
-                name="organizationName"
-                value={formData.organizationName}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-              />
-            </div>
-            <button type="submit">Send Message</button>
           </form>
         </div>
       </div>

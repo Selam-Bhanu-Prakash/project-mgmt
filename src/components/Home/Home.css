@@ -244,7 +244,7 @@
 }
 
 .count-div {
-    margin-top: 100px;
+    margin-top: 200px;
     height: 300px;
     width: 100%;
     padding-left: 15%;
@@ -269,6 +269,7 @@
 .count-h1 {
     font-size: 4rem;
     color: white;
+    opacity: 15%;
 }
 .count-p {
     color: white;
@@ -318,7 +319,7 @@ h6 {
 .ext-contact {
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     box-shadow: 0px 3px 12px rgba(0,0,0,0.2);
     border-radius: 10px;
     
@@ -327,7 +328,7 @@ h6 {
     z-index: 100;
     display: flex;
     flex-direction: row;
-    width: 40%;
+    width: 100%;
     height: 500px;
 }
 .left-side {
@@ -347,7 +348,6 @@ h6 {
 .right-side {
     height: 100%;
     width: 200%;
-    border: 2px solid black;
     padding: 50px;
     font-size: 12px;
 }
@@ -373,9 +373,46 @@ h6 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
-
-
+.form-field {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+}
+label {
+    margin-bottom: 15px;
+    opacity: 80%;
+}
+input, textarea {
+    border: 1px solid black;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+input {
+    width: 270px !important;
+}
+input:focus,textarea:focus {
+    outline: none;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.form-submit {
+    margin-left: 20px;
+    color: white !important;
+    border: none;
+    background-color: rgb(47, 183, 218);
+    font-size: 14px !important;
+    padding-top: 15px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 15px;
+    margin-top: 8%;
+    font-weight: bold;
+    border-radius: 5px;
+}
 
 
 
